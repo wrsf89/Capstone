@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="간병인정보"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="100dp">
+
+                    <ImageView
+                        android:id="@+id/profileImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:src="@android:drawable/sym_def_app_icon" />
+                </androidx.cardview.widget.CardView>
+
+
+                <EditText
+                    android:id="@+id/career"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="경력(년)"
+                    android:inputType="date" />
+
+                <EditText
+                    android:id="@+id/workTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="원하는 시간(10시20분 >> 1020)"
+                    android:inputType="time" />
+
+                <EditText
+                    android:id="@+id/license"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="보유하고 있는 자격증"
+                />
+
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="250dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/rating1" />
+
+                <TextView
+                    android:id="@+id/location_work"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="간병 희망 근로지"
+                    android:textColor="#EEE6C4"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/location_working"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/home_work"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="병원 간병" />
+
+                    <RadioButton
+                        android:id="@+id/hospital_work"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:text="재택 간병" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/info2_rating"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/info2_1rating"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1등급" />
+
+                    <RadioButton
+                        android:id="@+id/info2_2rating"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="2등급" />
+                    <RadioButton
+                        android:id="@+id/info2_3rating"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="3등급" />
+                    <RadioButton
+                        android:id="@+id/info2_4rating"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4등급" />
+                    <RadioButton
+                        android:id="@+id/info2_5rating"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="5등급" />
+                    <RadioButton
+                        android:id="@+id/info2_6rating"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="6등급" />
+                </RadioGroup>
+                <Button
+                    android:id="@+id/checkButton2"
+                    android:backgroundTint="#EEE6C4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="수정" />
+                <Button
+                    android:id="@+id/checkButton3"
+                    android:backgroundTint="#EEE6C4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="등록" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/buttonsBackgroundLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#91646464"
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:elevation="10dp"
+            app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="사진촬영" />
+
+                <Button
+                    android:id="@+id/gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="갤러리" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/view_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee6c4"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:text="back"
+                android:layout_marginRight="35dp"
+                android:textColor="#000000"
+                android:backgroundTint="@color/white"
+                android:textSize="13dp"
+
+                />
+
+            <TextView
+                android:id="@+id/loginMyPageText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:text="마이페이지"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scrollbarThumbVertical="@color/colorGrqy"
+
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radius2"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/loginImg">
+
+                </ImageView>
+
+
+
+
+                <TextView
+                    android:id="@+id/loginMyPageName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이름"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#EEE6C4"
+                    android:textSize="21dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/loginMyPageNameTv"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/underline"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#020202"
+
+                     />
+
+                <TextView
+                    android:id="@+id/loginMyPageGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="성별"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#EEE6C4"
+                    android:textSize="21dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/loginMyPageGenderTv"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/underline"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#020202"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/loginMyPageWhat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="서비스 이용"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#EEE6C4"
+                    android:textSize="21dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/loginMyPageWhatTv"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/underline"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#020202"
+                    android:layout_marginBottom="30dp"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/loginMyPageID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아이디"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#EEE6C4"
+                    android:textSize="21dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/loginMyPageIDTv"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/underline"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#020202"
+                    android:layout_marginBottom="30dp"
+                    />
+
+                <TextView
+                    android:id="@+id/loginMyPagePW"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="비밀번호"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#EEE6C4"
+                    android:textSize="21dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/loginMyPagePWTv"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/underline"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#020202"
+                    android:layout_marginBottom="30dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/loginMyPageEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이메일"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#EEE6C4"
+                    android:textSize="21dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/loginMyPageEmailTv"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/underline"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#020202"
+                    android:layout_marginBottom="30dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/signBirthtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="생년월일"
+                    android:textColor="#EEE6C4"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/loginMyPageBirth1Tv"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:background="@drawable/underline"
+                        android:ems="10"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/loginMyPageBirth2Tv"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/underline"
+                        android:ems="10"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/loginMyPageBirth3Tv"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/underline"
+                        android:text="" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/loginMyPageAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="주소"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#EEE6C4"
+                    android:textSize="21dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/loginMyPageAddressTv"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/underline"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#020202"
+                    android:layout_marginBottom="30dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/loginMyPagePhoneNB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="전화번호"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#EEE6C4"
+                    android:textSize="21dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/loginMyPagePhoneNBTv"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/underline"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#020202"
+                    android:layout_marginBottom="30dp"
+
+                    />
+
+
+
+
+
+
+
+
+                <Button
+                    android:id="@+id/loginMyPageCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#F8B758"
+                    android:onClick="onButton1Clicked"
+                    android:text="확인"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</FrameLayout>
+
+
+
+
+
+
+

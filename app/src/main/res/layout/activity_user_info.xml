@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="환자정보"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="100dp">
+
+                    <ImageView
+                        android:id="@+id/profileImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:src="@android:drawable/sym_def_app_icon" />
+                </androidx.cardview.widget.CardView>
+
+
+
+                <EditText
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="원하는 시간(10시20분 >> 1020)"
+                    android:inputType="time" />
+
+
+
+            <EditText
+                    android:id="@+id/diseaseName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="병명"
+                     />
+
+                <TextView
+                    android:id="@+id/location_care"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="간병 희망 위치"
+                    android:textColor="#eee6c4"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/location_check"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/hospital_care"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="병원 간병" />
+
+                    <RadioButton
+                        android:id="@+id/home_care"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:text="재택 간병" />
+                </RadioGroup>
+
+
+                <TextView
+                    android:id="@+id/dimentia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="치매 여부"
+                    android:textColor="#eee6c4"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/dementia_check"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/dimentia_yes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="YES" />
+                    <RadioButton
+                        android:id="@+id/dimentia_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="NO" />
+                </RadioGroup>
+
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="311dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/rating1" />
+                <RadioGroup
+                    android:id="@+id/info_rateing"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/rating1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1등급" />
+
+                    <RadioButton
+                        android:id="@+id/rating2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="2등급" />
+                    <RadioButton
+                        android:id="@+id/rating3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="3등급" />
+                    <RadioButton
+                        android:id="@+id/rating4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4등급" />
+                    <RadioButton
+                        android:id="@+id/rating5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="5등급" />
+                    <RadioButton
+                        android:id="@+id/rating6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="6등급" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="특이사항 (쉼표  &quot; , &quot; 로 구분)" />
+
+                <Button
+                    android:id="@+id/checkButton"
+                    android:backgroundTint="#eee6c4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="수정" />
+                <Button
+                    android:id="@+id/checkButton1"
+                    android:backgroundTint="#eee6c4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="등록" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/buttonsBackgroundLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#91646464"
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:elevation="10dp"
+            app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="사진촬영" />
+
+                <Button
+                    android:id="@+id/gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="갤러리" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/view_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+</RelativeLayout>

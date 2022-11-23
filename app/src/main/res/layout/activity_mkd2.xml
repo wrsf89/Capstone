@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="0dp"
+        android:textColor="#EEE6C4"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:text="매칭 목록"
+        android:textSize="35dp"/>
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_margin="40dp"
+        app:cardCornerRadius="40dp"
+        android:layout_height="400dp"
+
+        >
+
+        <LinearLayout
+            android:background="#eee6c4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </LinearLayout>
+
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:id="@+id/cardName"
+            android:layout_width="280dp"
+            android:layout_marginTop="60dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/cardDate"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="120dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/cardLocation"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="180dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/cardDetail"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="240dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/receive_ID1"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="246dp"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:visibility="gone"
+
+            >
+        </TextView>
+
+
+        <Button
+            android:id="@+id/matching_cancel"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="300dp"
+            android:backgroundTint="#EEE6C4"
+            android:text="매칭 취소"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/choiceBtn1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:backgroundTint="#eee6c4"
+            android:textColor="@color/black"
+            android:text="이전"
+            android:layout_marginRight="4dp"
+            android:scaleType="fitCenter">
+        </Button>
+
+
+        <Button
+            android:id="@+id/choiceBtn2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:backgroundTint="#eee6c4"
+            android:textColor="@color/black"
+            android:layout_marginLeft="4dp"
+            android:text="다음"
+            android:scaleType="fitCenter">
+
+
+
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp">
+        <ImageButton
+            android:id="@+id/bottomHomeBtn1"
+            android:layout_width="138dp"
+            android:layout_height="90dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/home"/>
+
+        <ImageButton
+            android:id="@+id/bottomMyPageBtn2"
+            android:layout_width="138dp"
+            android:layout_height="90dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/person"/>
+
+        <ImageButton
+            android:id="@+id/bottomBackBtn3"
+            android:layout_width="138dp"
+            android:layout_height="90dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/back" />
+        <TextView
+            android:id="@+id/receive_ID2"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="246dp"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:visibility="gone"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>
